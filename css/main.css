@@ -1,0 +1,317 @@
+/* Main.css styles to override the bootstrap defaults */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+p {
+    font-size: 2rem;
+}
+
+
+/*------ Rules for jumbotron image containers on each page ----------*/
+
+.jumbotron {
+    /*color: white;*/
+    background-image: url("../images/boite_3.jpg");
+    background-size: cover;
+    /*margin-top: 3%;*/
+    /*margin-right: 20%;*/
+    /*margin-left: 20%;*/
+    padding-bottom: 27%;
+}
+
+.jumbotron-news {
+    background-image: url("../images/boite_4_crop.jpg");
+    padding-bottom: 27%;
+}
+
+.jumbotron-watch {
+    background-image: url("../images/boite_2.jpg");
+}
+
+.jumbotron-look {
+    background-image: url("../images/boite_7.jpg");
+}
+
+.jumbotron-live {
+    background-image: url("../images/boite_6.jpg");
+}
+
+.jumbotron-listen {
+    background-image: url("../images/boite_8_crop.jpg");
+}
+.jumbotron-repertoire {
+    background-image: url("../images/boite_5_crop.jpg");
+}
+.jumbotron-contact{
+    background-image: url("../images/boite_1_crop.jpg");
+}
+/*.frame {*/
+    /*display: block;*/
+    /*text-align: center;*/
+    /*margin-top: 2%;*/
+/*}*/
+
+
+/*--------- Decorative divider --------------*/
+
+.divider {
+    display: block;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.divider img {
+    max-width: 75%;
+    height: auto;
+}
+
+
+/*--------- Title header styles -------------*/
+
+.header-link {
+    font-family: 'Poiret One', cursive;
+    /*font-family: 'Raleway', serif;*/
+    /*font-family: 'Rock Salt', cursive;*/
+    /*font-family: 'Cinzel Decorative', cursive;*/
+    /*font-family: 'Amatic SC', cursive;*/
+    /*font-family: 'Shadows Into Light', cursive;*/
+    font-size: 4rem;
+    text-align: center;
+    /*margin-left: 40%;*/
+    /*margin-right: auto;*/
+    margin-top: 2%;
+}
+
+.header-link h1 {
+    font-size: 4rem;
+}
+
+.header-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-link a:hover {
+    opacity: 0.5;
+}
+
+
+/*------- Main paragraph header style e.g news, about us etc ------*/
+
+.header-style {
+    padding-bottom: 5%;
+    font-family: 'Poiret One', cursive;
+    display: block;
+    text-align: center;
+    /*border-bottom: thin solid black;*/
+}
+
+
+/*------- Default Link Styles --------------*/
+
+a {
+    color: #292626;
+    transition: all 0.2s linear;
+}
+
+a:hover,
+a:focus {
+    color: #72316D;
+}
+
+
+/*---------- Navbar styles -----------------*/
+
+.navbar-default {
+    background-color: white;
+    border: none;
+    font-family: 'Raleway', serif;
+    /* center the nav items */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.navbar-default ul {
+    background-color: white;
+}
+
+/*------ Active link ----------*/
+
+.navbar-default .navbar-nav > .active > a {
+    color: crimson;
+    background-color: white;
+    border-bottom: 4px outset crimson;
+}
+
+
+/*------ Hover link style -----*/
+
+.navbar-default li:hover {
+    background-color: crimson;
+    border-bottom: crimson;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+}
+
+
+/*--------- Image carousel rules -----------------*/
+
+.carousel {
+    height: 400px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 500px;
+    /*margin: auto;*/
+}
+
+
+.carousel-control.right, .carousel-control.left {
+  background-image:none;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image:none;
+}
+
+
+
+/*--------- Set this measurement to the same height as the footer -------*/
+
+.push {
+    height: 100px;
+}
+
+
+/*--------- Footer Styles. ----------------------*/
+
+footer {
+    display: flex;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    color: white;
+    background-color: #222;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer-nav {
+    padding-left: 1px;
+}
+
+.footer-nav li {
+    display: inline;
+    padding: 1px;
+    color: white;
+}
+
+.footer-nav > li > a {
+    color: white;
+}
+
+.section-nav {
+    display: block;
+    flex: 1;
+}
+
+.section-nav h3 {
+    font-family: 'Poiret One', cursive;
+}
+
+.section-contact {
+    text-align: right;
+}
+
+.section-contact h3 {
+    font-family: 'Poiret One', cursive;
+}
+.section-contact a {
+    color: beige;
+}
+.wrap {
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto 170px;
+    padding: 0 0 100px;
+}
+
+.container-fluid h2 {
+    display: inline;
+    border-right: black;
+}
+/*-------- Style the Admin buttons ----------------------*/
+
+.btn {
+    float: right;
+    /*margin-left: 20px;*/
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    float: right;
+}
+
+
+
+/*------- Media Queries for Different Sized Devices ----------*/
+
+@media screen and (max-width: 500px) {
+
+
+    /*------- nav styles for small phones ------------------------*/
+
+    .navbar-default ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar-default li {
+        font-size: 1.4rem;
+    }
+    /*------- divider styles for small phones -------------------*/
+    .divider img {
+        max-width: 50%;
+        height: auto;
+        padding-bottom: 6%;
+    }
+    .jumbotron {
+        /*max-width: 100%;*/
+        background-size: cover;
+        /*margin-left: 5%;*/
+        /*margin-right: 5%;*/
+        padding-bottom: 40%;
+    }
+    /*------- shrink the font-size on small screens*/
+    .header-link h1 {
+        font-size: 5rem;
+    }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 50%;
+        margin: auto;
+    }
+    footer {
+        display: flex;
+        font-size: 11px;
+    }
+    .footer-nav li {
+        padding: 2px;
+    }
+    .section-nav h3 {
+        font-size: 11px;
+    }
+    .section-contact h3 {
+        font-size: 11px;
+    }
+    .section-contact p {
+        font-size: 11px;
+    }
+}
