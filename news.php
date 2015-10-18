@@ -4,8 +4,7 @@ require_once("views/header_link.php");
 require_once("defaultnavStyles.php");
 $aboutStyle = 'class="active"';
 require_once("views/navbar.php");
-require_once("views/divider.php");
-require_once("dbmodel.php");
+require_once __DIR__.'../dbmodel/dbmodel.php';
 $connection = dbconnect();
 $html = readNews();
 ?>
@@ -18,6 +17,9 @@ $html = readNews();
 </div>
 <div class="container">
 	<span class="header-style"><h2><a href="archive.php"> Go to Archives</a></h2></span>
+</div>
+<div class="divider">
+    <img src="images/g4012.png" alt="divider line">
 </div>
 <!-- Footer -->
 <?php require_once("views/footer.php"); ?>

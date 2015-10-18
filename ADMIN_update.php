@@ -1,8 +1,8 @@
 <?php
 require_once("check_login_status.php");
-require_once("views/header.php");
+require_once("/views/header.php");
 print "<p>logged in as $username</p>";
-require_once("dbmodel.php");
+require_once __DIR__ . '/dbmodel/dbmodel.php';
 $connection = dbconnect();
 global $connection;
 $id = $_GET['id'];

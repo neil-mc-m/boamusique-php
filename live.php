@@ -4,8 +4,8 @@ require_once("views/header_link.php");
 require_once("defaultnavStyles.php");
 $liveStyle = 'class="active"';
 require_once("views/navbar.php");
-require_once("views/divider.php");
-require_once("dbmodel.php");
+
+require_once __DIR__.'../dbmodel/dbmodel.php';
 $connection = dbconnect();
 $events = readEvents();
 ?>

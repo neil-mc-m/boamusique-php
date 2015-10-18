@@ -1,10 +1,7 @@
 <?php
-require_once("views/header.php");
-require_once("views/divider.php");
-require_once("defaultnavStyles.php");
-$homeStyle = 'class="active"';
-require_once("views/navbar.php");
-require_once("dbmodel.php");
+require_once("check_login_status.php");
+require_once("/views/header.php");
+require_once __DIR__ . '/dbmodel/dbmodel.php';
 $connection = dbconnect();
 
 global $connection;

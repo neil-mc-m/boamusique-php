@@ -5,7 +5,7 @@ require_once("defaultnavStyles.php");
 $aboutStyle = 'class="active"';
 require_once("views/navbar.php");
 
-require_once("dbmodel.php");
+require_once __DIR__.'../dbmodel/dbmodel.php';
 $connection = dbconnect();
 $html = readArchives();
 ?>

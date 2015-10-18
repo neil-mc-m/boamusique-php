@@ -1,10 +1,7 @@
 <?php
-require_once("views/header.php");
-require_once("views/divider.php");
-require_once("defaultnavStyles.php");
-$homeStyle = 'class="active"';
-require_once("views/navbar.php");
-require_once("dbmodel.php");
+require_once("check_login_status.php");
+
+require_once __DIR__ . '/dbmodel/dbmodel.php';
 $connection = dbconnect();
 global $connection;	
 $message = $_GET['message'];
@@ -19,7 +16,7 @@ $table = $_GET['table'];
 $query = "UPDATE $table SET post = '$message' WHERE id = $id;";
 mysqli_query($connection, $query);
 closeconnection($connection);
-header('location:ADMIN_home.php');
+header('location: ADMIN_home.php');
 exit();
 ?>
 <!-- <a href="ADMIN_read_news.php" class="btn btn-primary" role="button">Read News Posts</a> -->

@@ -1,6 +1,6 @@
 <?php
 require_once("check_login_status.php");
-require_once("views/header.php");
+require_once("/views/header.php");
 print "<p>logged in as $username</p>";
 # require_once("defaultnavStyles.php");
 # $homeStyle = 'class="active"';

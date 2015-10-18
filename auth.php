@@ -1,6 +1,6 @@
 <?php
 session_start(); // starts a new session
-require_once('dbmodel.php'); // includes the model file where all php functions are stored
+require_once __DIR__.'../dbmodel/dbmodel.php'; // includes the model file where all php functions are stored
 $connection = dbconnect(); // calls the connection function
 
 $username = $_POST['username']; // gets the username from the login form
